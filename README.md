@@ -1,4 +1,4 @@
-# approximate-methods-practical
+# Approximate Methods-Practical
 >Python scripts to demonstrate some basic ways of solving differential equations on a computer.
 
 
