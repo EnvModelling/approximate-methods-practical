@@ -15,7 +15,7 @@ rc('text', usetex=True)
 """
 
 """
-    parameters for the simulation
+    parameters for the simulation - these are the lines you should change+++++++++++++++++
 """
 method1=1
 lambda1=1./2e3
@@ -24,6 +24,10 @@ dt=1.
 tend=1e4
 tinit=0.
 dtsolve=10.
+"""
+------------------------------------------------------------------------------------------
+"""
+
 
 
 """
@@ -32,15 +36,23 @@ dtsolve=10.
 ts=np.mgrid[tinit:tend+dt:dt] 
 tsolve=np.mgrid[tinit:tend+dtsolve:dtsolve] 
 solution=np.zeros(np.shape(tsolve))
+"""
+---------------
+"""
+
 
 
 """
- create handle for plot and plot
+ create handle for plot and plot analytical solution
 """
 fig=plt.figure()
 plt.plot(ts,N0*np.exp(-lambda1*ts))
 plt.xlabel('time (s)')
 plt.ylabel('number of atoms')
+"""
+---------------
+"""
+
 
 
 if method1==1:
@@ -72,6 +84,9 @@ plt.plot(tsolve,solution,'--')
 
 
 plt.legend(['Analytical solution',text1])
+
+
+
 """
  print the plot to a directory
 """

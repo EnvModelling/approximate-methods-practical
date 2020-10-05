@@ -15,9 +15,8 @@ rc('text', usetex=True)
 """
     
 
-
 """
-    parameters for the simulation
+    parameters for the simulation - these are the lines you should change+++++++++++++++++
 """
 method1=1 # 1==triangular
 dx=100.
@@ -27,7 +26,13 @@ nx=30
 nt=100
 lenside=1000.
 start1=2.*dx
+"""
+------------------------------------------------------------------------------------------
+"""
 
+"""
+    this function calculates the analytical solution +++++++++++++++++
+"""
 def shape1(solution1,end1,x,start1=0):
     if method1==1:
         if start1 == 0.:
@@ -68,9 +73,14 @@ def shape1(solution1,end1,x,start1=0):
             solution1[ind]=10.
     return solution1
 
+"""
+----------------------------------------------------------------------
+"""
+
+
 
 """
-    set up arrays
+    set up arrays / variables
 """
 x=np.mgrid[0.:dx*nx:dx]
 solution=np.zeros(np.shape(x))
@@ -90,6 +100,9 @@ username=getpass.getuser()
 if not os.path.exists('/tmp/' + username):
          os.mkdir('/tmp/' + username)
 os.system('rm /tmp/' + username + '/*')
+"""
+---------------
+"""
 
 
 

@@ -15,7 +15,7 @@ rc('text', usetex=True)
 """
 
 """
-    parameters for the simulation
+    parameters for the simulation - these are the lines you should change+++++++++++++++++
 """
 method1=1
 omega1=0.1
@@ -25,6 +25,9 @@ dt=1.
 tend=100.
 tinit=0.
 dtsolve=0.5
+"""
+------------------------------------------------------------------------------------------
+"""
 
 
 """
@@ -34,6 +37,9 @@ ts=np.mgrid[tinit:tend+dt:dt]
 tsolve=np.mgrid[tinit:tend+dtsolve:dtsolve] 
 solution1=np.zeros(np.shape(tsolve)) # y
 solution2=np.zeros(np.shape(tsolve)) # dy
+"""
+---------------
+"""
 
 
 """
@@ -43,6 +49,9 @@ fig=plt.figure()
 plt.plot(ts,y0*np.cos(omega1*ts))
 plt.xlabel('time (s)')
 plt.ylabel('displacement')
+"""
+---------------
+"""
 
 
 if method1==1:
@@ -76,6 +85,8 @@ plt.plot(tsolve,solution1,'--')
 
 
 plt.legend(['Analytical solution',text1])
+
+
 """
  print the plot to a directory
 """
