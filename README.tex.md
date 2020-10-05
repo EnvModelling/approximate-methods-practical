@@ -1,5 +1,5 @@
 # approximate-methods-practical
->Some python scripts to demonstrate some basic ways of solving differential equations on a computer.
+>Python scripts to demonstrate some basic ways of solving differential equations on a computer.
 
 
 ## Environment to run on:
