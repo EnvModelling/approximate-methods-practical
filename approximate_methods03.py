@@ -144,3 +144,4 @@ plt.close()
     
 os.system('convert -delay 20 /tmp/' +username + '/plot*.png /tmp/'\
      +username + '/animation.gif')    
+os.system('rm /tmp/' + username + '/plot*.png')
